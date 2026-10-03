@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Moonville — A Little City After Dark</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <a href="#home" class="logo">
+            <span class="logo-moon">☾</span>
+            Moonville
+        </a>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#explore">Explore</a>
+            <a href="#story">Our Story</a>
+        </div>
+
+        <button class="theme-btn" id="themeBtn" aria-label="Change theme">
+            ☀
+        </button>
+
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+
+    <header class="hero" id="home">
+
+        <div class="sky">
+
+            <div class="star star-1"></div>
+            <div class="star star-2"></div>
+            <div class="star star-3"></div>
+            <div class="star star-4"></div>
+            <div class="star star-5"></div>
+            <div class="star star-6"></div>
+            <div class="star star-7"></div>
+            <div class="star star-8"></div>
+            <div class="star star-9"></div>
+            <div class="star star-10"></div>
+
+            <div class="shooting-star"></div>
+
+        </div>
+
+
+        <div class="hero-content">
+
+            <p class="eyebrow">WELCOME TO</p>
+
+            <h1>
+                Moon<span>ville</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                A little city that comes alive after dark.
+            </p>
+
+            <p class="hero-description">
+                Quiet streets, warm lights, late-night cafés
+                and stories hiding around every corner.
+            </p>
+
+            <a href="#explore" class="main-btn">
+                Explore Moonville
+                <span>↓</span>
+            </a>
+
+        </div>
+
+
+        <!-- MOON -->
+
+        <div class="big-moon">
+            <div class="moon-crater crater-one"></div>
+            <div class="moon-crater crater-two"></div>
+            <div class="moon-crater crater-three"></div>
+        </div>
+
+
+        <!-- CITY SILHOUETTE -->
+
+        <div class="city">
+
+            <div class="building b1">
+                <span></span>
+            </div>
+
+            <div class="building b2">
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="building b3">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="building b4">
+                <span></span>
+            </div>
+
+            <div class="building b5">
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="building b6">
+                <span></span>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= CITY INFO ================= -->
+
+    <section class="city-intro">
+
+        <div class="intro-number">01</div>
+
+        <div>
+            <p class="section-label">THE CITY</p>
+
+            <h2>
+                Small city.<br>
+                <span>Big stories.</span>
+            </h2>
+        </div>
+
+        <div class="intro-text">
+            <p>
+                Moonville is a fictional little city somewhere
+                between reality and imagination.
+            </p>
+
+            <p>
+                There's always somewhere to go, someone to meet,
+                or something new to discover.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- ================= EXPLORE ================= -->
+
+    <section class="explore-section" id="explore">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="section-label">DISCOVER</p>
+
+                <h2>Places worth visiting</h2>
+            </div>
+
+            <p class="heading-note">
+                Click a location to explore.
+            </p>
+
+        </div>
+
+
+        <div class="places-grid">
+
+            <!-- CAFE -->
+
+            <article class="place-card"
+                onclick="openPlace('cafe')">
+
+                <div class="card-top">
+                    <span class="place-icon">☕</span>
+                    <span class="place-number">01</span>
+                </div>
+
+                <h3>Moon Café</h3>
+
+                <p>
+                    Warm drinks, soft music and conversations
+                    that last until midnight.
+                </p>
+
+                <span class="card-link">
+                    Visit place →
+                </span>
+
+            </article>
+
+
+            <!-- LIBRARY -->
+
+            <article class="place-card"
+                onclick="openPlace('library')">
+
+                <div class="card-top">
+                    <span class="place-icon">📚</span>
+                    <span class="place-number">02</span>
+                </div>
+
+                <h3>Starlight Library</h3>
+
+                <p>
+                    A quiet old library filled with books,
+                    secrets and forgotten stories.
+                </p>
+
+                <span class="card-link">
+                    Visit place →
+                </span>
+
+            </article>
+
+
+            <!-- PARK -->
+
+            <article class="place-card"
+                onclick="openPlace('park')">
+
+                <div class="card-top">
+                    <span class="place-icon">🌳</span>
+                    <span class="place-number">03</span>
+                </div>
+
+                <h3>Dreamer's Park</h3>
+
+                <p>
+                    The perfect place to sit beneath the trees
+                    and watch the night sky.
+                </p>
+
+                <span class="card-link">
+                    Visit place →
+                </span>
+
+            </article>
+
+
+            <!-- CINEMA -->
+
+            <article class="place-card"
+                onclick="openPlace('cinema')">
+
+                <div class="card-top">
+                    <span class="place-icon">🎬</span>
+                    <span class="place-number">04</span>
+                </div>
+
+                <h3>Moonlight Cinema</h3>
+
+                <p>
+                    Outdoor movies, blankets and popcorn
+                    under the open sky.
+                </p>
+
+                <span class="card-link">
+                    Visit place →
+                </span>
+
+            </article>
+
+
+            <!-- MARKET -->
+
+            <article class="place-card"
+                onclick="openPlace('market')">
+
+                <div class="card-top">
+                    <span class="place-icon">🛍️</span>
+                    <span class="place-number">05</span>
+                </div>
+
+                <h3>Night Market</h3>
+
+                <p>
+                    Tiny shops, handmade treasures and
+                    street food glowing beneath warm lights.
+                </p>
+
+                <span class="card-link">
+                    Visit place →
+                </span>
+
+            </article>
+
+
+            <!-- TOWN HALL -->
+
+            <article class="place-card"
+                onclick="openPlace('hall')">
+
+                <div class="card-top">
+                    <span class="place-icon">🏛️</span>
+                    <span class="place-number">06</span>
+                </div>
+
+                <h3>Old Town Hall</h3>
+
+                <p>
+                    The oldest building in Moonville and
+                    the heart of the little city.
+                </p>
+
+                <span class="card-link">
+                    Visit place →
+                </span>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CITY CLOCK ================= -->
+
+    <section class="clock-section">
+
+        <div>
+
+            <p class="section-label">RIGHT NOW IN MOONVILLE</p>
+
+            <h2 id="cityTime">00:00</h2>
+
+            <p id="cityMessage">
+                The city is getting ready for another night.
+            </p>
+
+        </div>
+
+        <div class="clock-icon">
+            ◷
+        </div>
+
+    </section>
+
+
+    <!-- ================= STORY ================= -->
+
+    <section class="story-section" id="story">
+
+        <div class="story-visual">
+
+            <div class="story-moon">
+                ☾
+            </div>
+
+            <div class="story-ring"></div>
+
+        </div>
+
+
+        <div class="story-content">
+
+            <p class="section-label">OUR STORY</p>
+
+            <h2>
+                Maybe places<br>
+                don't have to be real
+                to feel <span>real.</span>
+            </h2>
+
+            <p>
+                Moonville was imagined as a place where you
+                can slow down for a moment.
+            </p>
+
+            <p>
+                No schedules. No rush. Just a little city,
+                a little moonlight and somewhere to wander.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            ☾ Moonville
+        </div>
+
+        <p>
+            A fictional city made for curious minds.
+        </p>
+
+        <span>
+            © 2026 Haniya
+        </span>
+
+    </footer>
+
+
+    <!-- ================= POPUP ================= -->
+
+    <div class="popup" id="popup">
+
+        <div class="popup-box">
+
+            <button
+                class="popup-close"
+                onclick="closePlace()">
+                ×
+            </button>
+
+            <div id="popupIcon"></div>
+
+            <p class="popup-label">
+                MOONVILLE LOCATION
+            </p>
+
+            <h2 id="popupTitle"></h2>
+
+            <p id="popupText"></p>
+
+            <div class="popup-info">
+                <span id="popupHours"></span>
+                <span id="popupLocation"></span>
+            </div>
+
+            <button
+                class="popup-button"
+                onclick="closePlace()">
+                Back to Moonville
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
